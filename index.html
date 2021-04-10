@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>ResumeProject</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+                                                                        <!-- Голова сайта-->
+        <header class="container-outer" id="header-outer">
+            <div id="header-inner" class="container-inner">
+                <button class="mobile" id="mobile-menu">
+                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.53857" width="16.9232" height="2.11765" rx="1.05882" fill="#787878"/>
+                        <rect y="5.29413" width="22.0001" height="2.11765" rx="1.05882" fill="#787878"/>
+                        <rect y="10.5882" width="22.0001" height="2.11765" rx="1.05882" fill="#787878"/>
+                        <rect x="1.69238" y="15.8824" width="18.6155" height="2.11765" rx="1.05882" fill="#787878"/>
+                    </svg>     
+                </button>
+
+                <img id="header-logo" src="styles/img/logo.png" alt="Логотип 'Food Imperial'">
+                <div class="desktop" id="header-phones">
+                    <a href="#" class="link-def">099 5000 307</a>
+                    <a href="#" class="link-def">Обеды</a>
+                    <a href="#" class="link-def">097 5000 307</a>
+                    <a href="#" class="link-def">Кейтеринг</a>
+                    <a href="#" class="link-def">097 5000 307</a>
+                    <a href="#" class="link-def">Фуршет Box</a>
+                </div>
+                <div id="header-right">
+                    <a class="link-def header-link desktop" href="#">Вход для клиентов</a>
+                    <button class="button" id="cart"> <span>Корзина</span></button>
+                </div>
+                <nav class="desktop" id="nav">
+                    <a class="link-def header-link" href="#">Главная</a>
+                    <a class="link-def header-link" href="#">Доставка</a>
+                    <a class="link-def header-link" href="#">Меню</a>
+                    <a class="link-def header-link" href="#">Контакты</a>
+                    <a class="link-def header-link" href="#">Обеды</a>
+                    <a class="link-def header-link" href="#">Кейтеринг</a>
+                    <a class="link-def header-link" href="#">Фуршет</a>
+                    <a class="link-def header-link" href="#">Торты на заказ</a>
+                </nav>
+            </div>
+            <div id="mobile-menu-onclick">
+                <ul id="mobile-nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Обеды</a></li>
+                    <li><a href="#">Кейтеринг</a></li>
+                    <li><a href="#">Фуршет</a></li>
+                    <li><a href="#">Торты на заказ</a></li>
+                </ul>
+                <div id="phones-mobile">
+                    <div id="phones-grid">
+                        <span class="phone-grid-number">099 5000 307</span>
+                        <span class="phone-grid-text">Обеды</span>
+                        <span class="phone-grid-number">099 5000 307</span>
+                        <span class="phone-grid-text">Кейтеринг</span>
+                        <span class="phone-grid-number">073 5000 301</span>
+                        <span class="phone-grid-text">Фуршет Box</span>
+                    </div>
+                </div>
+                <div id="mobile-menu-enter">
+                    <button class="button main-button">Вход для клиентов</button>
+                </div>
+            </div>
+        </header>
+                                                                        <!-- Ежедневное меню-->
+        <div class="container-outer" id="daily-menu">
+            <div class="container-inner" id="daily-menu-inner">
+                <div class="desktop" id="daily-full-menu">
+                    <svg  id="daily-menu-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.25 22.5625V20.6875H26.375V19.75C26.375 16.4497 23.9261 13.7111 20.75 13.2548V11.3125H18.875V13.2548C15.699 13.7111 13.25 16.4497 13.25 19.75V20.6875H11.375V22.5625H28.25ZM15.125 19.75C15.125 17.1653 17.2278 15.0625 19.8125 15.0625C22.3972 15.0625 24.5 17.1653 24.5 19.75V20.6875H15.125V19.75Z" fill="inherit"/>
+                        <path d="M20.75 0H0V26.3125H7.625V32H32V5.625H20.75V0ZM7.625 24.4375H1.875V1.875H15.8412L7.625 5.98306V24.4375ZM18.875 2.45444V5.625H12.5338L18.875 2.45444ZM30.125 7.5V30.125H9.5V7.5H30.125Z" fill="inherit"/>
+                        <path d="M13.25 26.3125H26.375V28.1875H13.25V26.3125Z" fill="#inherit"/>
+                    </svg>
+                    <a id="daily-menu-main" href="#">Меню</a>
+                </div>
+                <ol id="dayly-menu-week">
+                    <li><a class="link-def daily-menu-link" href="#">Понедельник</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Вторник</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Среда</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Четверг</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Пятница</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Суббота</a></li>
+                    <li><a class="link-def daily-menu-link" href="#">Воскресенье</a></li>
+                </ol>
+            </div>
+        </div>
+                                                                        <!-- Баннер с новогодним предложением-->
+        <div class="container-outer" id="banner-outer">
+            <div class="container-inner" id="banner">
+                <div id="banner-main">
+                    <h2 id="banner-header">Новогоднее предложение</h2>
+                    <p id="banner-text">Праздничный ужин <span id="banner-cost">250</span> грн.чел</p>
+                    <button class="button main-button">Заказать</button>
+                </div>
+            </div>
+        </div>
+                                                                        <!-- Основное меню-->
+        <div class="container-outer" id="menu-outer">
+            <div id="mobile-options-onclick">
+                <h3 id="mobile-options-header">Фильтры</h3> 
+                <button id="mobile-options-close">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="16" width="22.0001" height="2.11765" rx="1.05882" transform="rotate(-45 1 16)" fill="#787878"/>
+                        <rect width="22.0001" height="2.11765" rx="1.05882" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 18 16)" fill="#787878"/>
+                    </svg> 
+                </button>
+                <form action="" method="GET">
+                    <ul id="mobile-options-list">
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="All" id="All" checked>
+                            <label for="All" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choosed.png" alt="Галочка выбора" >Все</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Salats" id="Salats">
+                            <label for="Salats" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Салаты</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="First" id="First">
+                            <label for="First" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Первые блюда</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Main" id="Main">
+                            <label for="Main" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Основные блюда</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Garnirs" id="Garnirs">
+                            <label for="Garnirs" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Гарниры</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Deserts" id="Deserts">
+                            <label for="Deserts" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Десерты</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Salt" id="Salt">
+                            <label for="Salt" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Выпечка соленая</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Complex" id="Complex">
+                            <label for="Complex" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Комплексные обеды</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Drinks" id="Drinks">
+                            <label for="Drinks" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Напитки и добавки</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Bread" id="Bread">
+                            <label for="Bread" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Хлебобулочные изделия</label>
+                        </li>
+                        <li class="mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Pribors" id="Pribors">
+                            <label for="Pribors" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Одноразовые приборы</label>
+                        </li>
+                        <li class="red-option mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="NewYear" id="NewYear">
+                            <label for="NewYear" class="mobileLabel"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="#F92424" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.9555 8.18356L2.09424 13.1482V13.1486C2.5497 14.9682 3.55082 16.5767 4.96798 17.79L7.30328 16.9143C4.82282 14.6927 3.59852 11.4248 3.9555 8.18356Z" fill="inherit"/>
+                                <path d="M1.46389 14.8288L0.037251 18.6328C-0.133264 19.0871 0.311212 19.5365 0.76895 19.3645L3.77873 18.236C2.7692 17.2562 1.98609 16.0885 1.46389 14.8288Z" fill="inherit"/>
+                                <path d="M7.94543 7.72057L5.82384 5.59898C4.10369 9.47922 5.27967 13.9143 8.52518 16.4562L10.7896 15.6071C8.80088 13.5533 7.72523 10.6867 7.94543 7.72057Z" fill="inherit"/>
+                                <path d="M9.05518 8.8304C9.14233 11.2422 10.1927 13.5215 11.9698 15.1641H11.9702L13.6299 14.5419C14.0175 14.3964 14.1236 13.8989 13.8322 13.6075L9.05518 8.8304Z" fill="inherit"/>
+                                <path d="M13.2065 10.6161C13.4285 10.8381 13.7884 10.8381 14.0103 10.6161C16.1487 8.47778 18.2308 9.13888 18.2516 9.14578C18.5494 9.24502 18.8713 9.08409 18.9706 8.78629C19.0699 8.48857 18.9089 8.1666 18.6111 8.06733C18.499 8.03 15.8362 7.18266 13.2066 9.8123C12.9846 10.0342 12.9845 10.3942 13.2065 10.6161Z" fill="inherit"/>
+                                <path d="M9.58948 6.19501C12.2192 3.56567 11.3716 0.902606 11.3344 0.790445C11.2351 0.492612 10.9131 0.331949 10.6152 0.431227C10.3178 0.530504 10.1567 0.852209 10.256 1.15004C10.2628 1.17088 10.924 3.25306 8.78541 5.39132C8.56484 5.61189 8.5626 5.97152 8.78541 6.19501C9.00856 6.41812 9.36811 6.41638 9.58948 6.19501Z" fill="inherit"/>
+                                <path d="M10.7951 7.40086C10.5732 7.62283 10.5732 7.9827 10.7951 8.20467C11.0151 8.42463 11.3724 8.42751 11.5956 8.20804C11.8892 8.06174 12.8006 8.61049 13.3071 8.10418C13.8081 7.60309 13.2758 6.71024 13.4088 6.39732C13.7221 6.26402 14.6146 6.79663 15.1156 6.29562C15.6168 5.79453 15.0844 4.90168 15.2174 4.58873C15.5312 4.45539 16.4232 4.98807 16.9242 4.48703C17.4254 3.98594 16.893 3.09308 17.026 2.78013C17.3379 2.64747 18.2322 3.17895 18.7329 2.67839C19.2392 2.17204 18.6915 1.25903 18.8367 0.966915C19.0553 0.744715 19.0542 0.387353 18.8333 0.166479C18.6114 -0.0554931 18.2515 -0.0554931 18.0295 0.166479C17.5815 0.614479 17.6692 1.24694 17.7536 1.69911C17.3014 1.61472 16.669 1.52708 16.221 1.97504C15.773 2.42304 15.8606 3.0555 15.945 3.50766C15.4928 3.42332 14.8603 3.33559 14.4124 3.78363C13.9644 4.23163 14.0521 4.86409 14.1364 5.31626C13.6842 5.23187 13.0518 5.14419 12.6038 5.59219C12.1558 6.04019 12.2435 6.67265 12.3278 7.12482C11.8756 7.04051 11.2431 6.95286 10.7951 7.40086Z" fill="inherit"/>
+                                <path d="M14.0103 2.57795C14.2323 2.35598 14.2323 1.99612 14.0103 1.77415C13.7884 1.55217 13.4285 1.55217 13.2065 1.77415C12.9845 1.99612 12.9845 2.35598 13.2065 2.57795C13.4285 2.79993 13.7884 2.79993 14.0103 2.57795Z" fill="inherit"/>
+                                <path d="M17.6275 6.76354C17.9414 6.76354 18.1958 6.50906 18.1958 6.19515C18.1958 5.88124 17.9414 5.62677 17.6275 5.62677C17.3136 5.62677 17.0591 5.88124 17.0591 6.19515C17.0591 6.50906 17.3136 6.76354 17.6275 6.76354Z" fill="inherit"/>
+                                <path d="M16.4219 11.42C16.1999 11.6419 16.1999 12.0018 16.4219 12.2238C16.6438 12.4457 17.0037 12.4457 17.2257 12.2238C17.4476 12.0018 17.4476 11.6419 17.2257 11.42C17.0037 11.198 16.6438 11.198 16.4219 11.42Z" fill="inherit"/>
+                                <path d="M8.38362 3.38177C8.60559 3.1598 8.60559 2.79994 8.38362 2.57796C8.16164 2.35599 7.80178 2.35599 7.57981 2.57796C7.35784 2.7999 7.35784 3.1598 7.57981 3.38177C7.80178 3.60374 8.16168 3.60374 8.38362 3.38177Z" fill="inherit"/>
+                            </svg>Новогоднее предложение</label>
+                        </li>
+                        <li class="red-option mobile-pick-options">
+                            <input type="checkbox" name="mobile-option-item" value="Party" id="Party">
+                            <label for="Party"><img class="picked" src="styles/img/mobile-options-choose.png" alt="Галочка выбора">Праздничный ужин - 250грн/чел</label>
+                        </li>
+                    </ul>
+                    <button type="submit" class="button main-button" id="mobile-options-submit">Применить</button>
+                </form>
+            </div>
+            <div class="container-inner" id="menu">
+                                                                            <!--Категории меню-->
+                <ul class="desktop" id="menu-options-list">
+                    <li class="menu-option" id="menu-option-active"><input class="menu-option-radio" type="radio" name="menu-radio" value="All" id="radio-all" checked><label for="radio-all" class="link-def">Все</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Salats" id="radio-salats"><label for="radio-salats" class="link-def">Салаты</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="First" id="radio-first"><label for="radio-first" class="link-def">Первые блюда</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Main" id="radio-main"><label for="radio-main" class="link-def">Основные блюда</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Garnirs" id="radio-garnirs"><label for="radio-garnirs" class="link-def">Гарниры</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Deserts" id="radio-deserts"><label for="radio-deserts" class="link-def">Десерты</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Salt" id="radio-salt"><label for="radio-salt" class="link-def">Выпечка соленая</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Complex" id="radio-comlex"><label for="radio-comlex" class="link-def">Комплексные обеды</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Drinks" id="radio-drinks"><label for="radio-drinks" class="link-def">Напитки и добавки</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Bread" id="radio-bread"><label for="radio-bread" class="link-def">Хлебобулочные изделия</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Pribors" id="radio-pribors"><label for="radio-pribors" class="link-def">Одноразовые приборы</label></li>
+                    <li class="menu-option menu-svg-container">
+                        <svg id="menu-option-svg" width="19" height="20" viewBox="0 0 19 20" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.9555 8.18356L2.09424 13.1482V13.1486C2.5497 14.9682 3.55082 16.5767 4.96798 17.79L7.30328 16.9143C4.82282 14.6927 3.59852 11.4248 3.9555 8.18356Z" fill="inherit"/>
+                            <path d="M1.46389 14.8288L0.037251 18.6328C-0.133264 19.0871 0.311212 19.5365 0.76895 19.3645L3.77873 18.236C2.7692 17.2562 1.98609 16.0885 1.46389 14.8288Z" fill="inherit"/>
+                            <path d="M7.94543 7.72057L5.82384 5.59898C4.10369 9.47922 5.27967 13.9143 8.52518 16.4562L10.7896 15.6071C8.80088 13.5533 7.72523 10.6867 7.94543 7.72057Z" fill="inherit"/>
+                            <path d="M9.05518 8.8304C9.14233 11.2422 10.1927 13.5215 11.9698 15.1641H11.9702L13.6299 14.5419C14.0175 14.3964 14.1236 13.8989 13.8322 13.6075L9.05518 8.8304Z" fill="inherit"/>
+                            <path d="M13.2065 10.6161C13.4285 10.8381 13.7884 10.8381 14.0103 10.6161C16.1487 8.47778 18.2308 9.13888 18.2516 9.14578C18.5494 9.24502 18.8713 9.08409 18.9706 8.78629C19.0699 8.48857 18.9089 8.1666 18.6111 8.06733C18.499 8.03 15.8362 7.18266 13.2066 9.8123C12.9846 10.0342 12.9845 10.3942 13.2065 10.6161Z" fill="inherit"/>
+                            <path d="M9.58948 6.19501C12.2192 3.56567 11.3716 0.902606 11.3344 0.790445C11.2351 0.492612 10.9131 0.331949 10.6152 0.431227C10.3178 0.530504 10.1567 0.852209 10.256 1.15004C10.2628 1.17088 10.924 3.25306 8.78541 5.39132C8.56484 5.61189 8.5626 5.97152 8.78541 6.19501C9.00856 6.41812 9.36811 6.41638 9.58948 6.19501Z" fill="inherit"/>
+                            <path d="M10.7951 7.40086C10.5732 7.62283 10.5732 7.9827 10.7951 8.20467C11.0151 8.42463 11.3724 8.42751 11.5956 8.20804C11.8892 8.06174 12.8006 8.61049 13.3071 8.10418C13.8081 7.60309 13.2758 6.71024 13.4088 6.39732C13.7221 6.26402 14.6146 6.79663 15.1156 6.29562C15.6168 5.79453 15.0844 4.90168 15.2174 4.58873C15.5312 4.45539 16.4232 4.98807 16.9242 4.48703C17.4254 3.98594 16.893 3.09308 17.026 2.78013C17.3379 2.64747 18.2322 3.17895 18.7329 2.67839C19.2392 2.17204 18.6915 1.25903 18.8367 0.966915C19.0553 0.744715 19.0542 0.387353 18.8333 0.166479C18.6114 -0.0554931 18.2515 -0.0554931 18.0295 0.166479C17.5815 0.614479 17.6692 1.24694 17.7536 1.69911C17.3014 1.61472 16.669 1.52708 16.221 1.97504C15.773 2.42304 15.8606 3.0555 15.945 3.50766C15.4928 3.42332 14.8603 3.33559 14.4124 3.78363C13.9644 4.23163 14.0521 4.86409 14.1364 5.31626C13.6842 5.23187 13.0518 5.14419 12.6038 5.59219C12.1558 6.04019 12.2435 6.67265 12.3278 7.12482C11.8756 7.04051 11.2431 6.95286 10.7951 7.40086Z" fill="inherit"/>
+                            <path d="M14.0103 2.57795C14.2323 2.35598 14.2323 1.99612 14.0103 1.77415C13.7884 1.55217 13.4285 1.55217 13.2065 1.77415C12.9845 1.99612 12.9845 2.35598 13.2065 2.57795C13.4285 2.79993 13.7884 2.79993 14.0103 2.57795Z" fill="inherit"/>
+                            <path d="M17.6275 6.76354C17.9414 6.76354 18.1958 6.50906 18.1958 6.19515C18.1958 5.88124 17.9414 5.62677 17.6275 5.62677C17.3136 5.62677 17.0591 5.88124 17.0591 6.19515C17.0591 6.50906 17.3136 6.76354 17.6275 6.76354Z" fill="inherit"/>
+                            <path d="M16.4219 11.42C16.1999 11.6419 16.1999 12.0018 16.4219 12.2238C16.6438 12.4457 17.0037 12.4457 17.2257 12.2238C17.4476 12.0018 17.4476 11.6419 17.2257 11.42C17.0037 11.198 16.6438 11.198 16.4219 11.42Z" fill="inherit"/>
+                            <path d="M8.38362 3.38177C8.60559 3.1598 8.60559 2.79994 8.38362 2.57796C8.16164 2.35599 7.80178 2.35599 7.57981 2.57796C7.35784 2.7999 7.35784 3.1598 7.57981 3.38177C7.80178 3.60374 8.16168 3.60374 8.38362 3.38177Z" fill="inherit"/>
+                        </svg>
+                        <input class="menu-option-radio" type="radio" name="menu-radio" value="NewYear" id="radio-newyear"><label for="radio-newyear" class="link-def menu-special-link" >Новогоднее предложение</label></li>
+                    <li class="menu-option"> <input class="menu-option-radio" type="radio" name="menu-radio" value="Party" id="radio-party"><label for="radio-party" class="link-def menu-special-link">Праздничный ужин - 250 грн.чел</label></li>
+                </ul>
+                <div id="mobile-options"> <span>Фильтры</span> <button id="mobile-options-all">Все</button></div>
+                                                                            <!--Непосредственно меню-->
+                <div id="main-menu">
+                    <div class="main-menu-meal">
+                        <img class="meal-img" src="styles/img/menu4.png" alt="Фиджи салат">
+                        <h3 class="meal-header">Фиджи салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button"class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Листья салата, помидоры черри, огурцы, перепелиные яйца, растительное масло, мёд, лимон</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">38</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal">
+                        <img class="meal-img" src="styles/img/menu3.png" alt="Буряк отварной салат">
+                        <h3 class="meal-header">Буряк отварной салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Отварная свекла, соль, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal">
+                        <img class="meal-img" src="styles/img/menu1.png" alt="Греческий салат">
+                        <h3 class="meal-header">Греческий салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">200 г</p>
+                            <p class="meal-recipe">Помидоры, болгарский перец, огурцы, красный лук, маслины, сыр фета, оливковое масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">42</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal">
+                        <img class="meal-img" src="styles/img/menu2.png" alt="Греческий салат">
+                        <h3 class="meal-header">Капуста свежая с зеленью</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">100 г</p>
+                            <p class="meal-recipe">Свежая капуста, морковь, укроп, зеленый лук, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last8">
+                        <img class="meal-img" src="styles/img/menu1.png" alt="Греческий салат">
+                        <h3 class="meal-header">Греческий салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">200 г</p>
+                            <p class="meal-recipe">Помидоры, болгарский перец, огурцы, красный лук, маслины, сыр фета, оливковое масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">42</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last8">
+                        <img class="meal-img" src="styles/img/menu2.png" alt="Греческий салат">
+                        <h3 class="meal-header">Капуста свежая с зеленью</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">100 г</p>
+                            <p class="meal-recipe">Свежая капуста, морковь, укроп, зеленый лук, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last8">
+                        <img class="meal-img" src="styles/img/menu3.png" alt="Буряк отварной салат">
+                        <h3 class="meal-header">Буряк отварной салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Отварная свекла, соль, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last8">
+                        <img class="meal-img" src="styles/img/menu4.png" alt="Фиджи салат">
+                        <h3 class="meal-header">Фиджи салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Листья салата, помидоры черри, огурцы, перепелиные яйца, растительное масло, мёд, лимон</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">38</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last4">
+                        <img class="meal-img" src="styles/img/menu3.png" alt="Буряк отварной салат">
+                        <h3 class="meal-header">Буряк отварной салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Отварная свекла, соль, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last4">
+                        <img class="meal-img" src="styles/img/menu4.png" alt="Фиджи салат">
+                        <h3 class="meal-header">Фиджи салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">150 г</p>
+                            <p class="meal-recipe">Листья салата, помидоры черри, огурцы, перепелиные яйца, растительное масло, мёд, лимон</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">38</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last4">
+                        <img class="meal-img" src="styles/img/menu1.png" alt="Греческий салат">
+                        <h3 class="meal-header">Греческий салат</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">200 г</p>
+                            <p class="meal-recipe">Помидоры, болгарский перец, огурцы, красный лук, маслины, сыр фета, оливковое масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">42</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="main-menu-meal last4">
+                        <img class="meal-img" src="styles/img/menu2.png" alt="Греческий салат">
+                        <h3 class="meal-header">Капуста свежая с зеленью</h3>
+                        <form class="main-menu-info">
+                            <div class="meal-count">
+                                <button type="button" class="meal-count-button meal-count-down">&ndash;</button>
+                                <span class="meal-count-number">1</span>
+                                <button type="button" class="meal-count-button meal-count-up">+</button>
+                            </div>
+                            <p class="meal-gram">100 г</p>
+                            <p class="meal-recipe">Свежая капуста, морковь, укроп, зеленый лук, растительное масло</p>
+                            <div class="meal-price-and-buy">
+                                <img class="meal-price-img" src="styles/img/price.png" alt="Ценник">
+                                <span class="meal-price-number">18</span>
+                                <span class="meal-price-valute">грн</span>
+                                <button type="submit" class="meal-buy-button">Купить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                                                                            <!--Кнопка раскрытия элементов меню-->
+                <button class="button main-button" id="more-meal">Ещё 8 блюд</button>
+            </div>
+        </div>
+                                                                        <!-- Отзывы клиентов-->
+        <div class="container-outer" id="reviews-outer">
+            <div class="container-inner" id="reviews">
+                <h2 id="reviews-header">Отзывы наших клиентов</h2>
+                <ul id="reviews-slider">
+                    <li class="slider-item" style="display: block;">
+                        <iframe width="754" height="404" src="https://www.youtube.com/embed/yZZMdtrxxmE?showinfo=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li class="slider-item">
+                        <iframe width="754" height="404" src="https://www.youtube.com/embed/RLuVVIztVXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li class="slider-item">
+                        <iframe width="754" height="404" src="https://www.youtube.com/embed/6286m1Beufw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ul>
+                <button class="button reviews-button" id="button-left">&#60;</button>
+                <button class="button reviews-button" id="button-right">&#62;</button>
+            </div>
+        </div>
+                                                                        <!-- О нас-->
+        <div class="container-outer" id="about-outer">
+            <section class="container-inner" id="about">
+                <h2 id="about-header">О нас</h2>
+                <p class="about-text">Вы все еще не можете определиться, перекусывать ли в обеденный перерыв бутербродами, бежать в кафе или <strong class="about-important">заказать обед</strong>? Привозная домашняя кухня, <strong class="about-important">комплексные обеды в Киеве</strong> – это вкусные, недорогие кушанья и существенная экономия времени. Удобный сервис давно оценили многие люди и питаются на работе здоровой и полноценной пищей <strong class="about-important">(бизнес ланч в Киеве)</strong>.</p><br><p class="about-text">Но как выбрать безупречного поставщика, который обеспечит своевременную <strong class="about-important">доставку обедов (Киев)</strong>, ведь подобных предложений в сфере общественного питания много. Мы готовы приподнять завесу и открыть вам секрет. Однако для сначала целесообразно разобраться, почему лучше заказывать высококачественные аппетитные обеды в офис (Киев) домашней кухни</p>
+            </section>
+        </div>
+                                                                        <!-- Подвал с ссылками-->
+        <div class="container-outer" id="footer-outer">
+            <div class="container-inner" id="footer">
+                <a href="#" class="link-def footer-link">Оферта</a>
+                <a href="#" class="link-def footer-link">Способ оплаты</a>
+                <a href="#" class="link-def footer-link">Условия доставки</a>
+                <a href="#" class="link-def footer-link">Условия возврата</a>
+            </div>
+        </div>
+                                                                        <!--Последний подвал-->
+        <div class="container-outer" id="last-footer-outer">
+            <p class="last-footer">Разработка сайтов - <span class="last-footer-span">Genesis Group</span></p><p class="last-footer">Продвижение сайта&nbsp;-&nbsp;<span class="last-footer-span">SEO-Angels</span></p>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
